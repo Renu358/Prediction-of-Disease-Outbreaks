@@ -6,11 +6,9 @@ import streamlit as st    # web app
 st.set_page_config(page_title='Prediction of Disease Outbreaks',
                    layout='wide',
                    page_icon="🧑‍⚕️")
-diabetes_model= pickle.load(open(r"C:\Users\91903\OneDrive\Desktop\INTERNSHIPONLINE\saved_models\diabetes_model.sav",'rb'))
-heart_disease_model = pickle.load(open(r"C:\Users\91903\OneDrive\Desktop\INTERNSHIPONLINE\saved_models\heart_model.sav", 'rb'))
-parkinsons_model = pickle.load(open(r"C:\Users\91903\OneDrive\Desktop\INTERNSHIPONLINE\saved_models\parkinsons_model.sav", 'rb'))
-
-
+diabetes_model = pickle.load(open('saved_models/diabetes_model.sav', 'rb'))
+heart_disease_model = pickle.load(open('saved_models/heart_model.sav', 'rb'))
+parkinsons_model = pickle.load(open('saved_models/parkinsons_model.sav', 'rb'))
 
 # Create sidebar for navigation
 st.sidebar.title("Prediction of Disease Outbreaks")
